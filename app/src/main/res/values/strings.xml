@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">food test app</string>
+    <string name="рис_с_овощами">Рис с овощами</string>
+    <string name="салат_по_восточному">Салат \nпо восточному</string>
+    <string name="рыба_с_овощами_и_рисом">Рыба с овощами \nи рисом</string>
+    <string name="тортеллини">Тортеллини</string>
+    <string name="зеленый_салат">Зеленый салат</string>
+    <string name="рулеты_из_ветчины">Рулеты \nиз ветчены</string>
+    <string name="Все_меню">Все меню</string>
+    <string name="салаты">Салаты</string>
+    <string name="С_рисом">С рисом</string>
+    <string name="С_рыбой">С рыбой</string>
+</resources>
