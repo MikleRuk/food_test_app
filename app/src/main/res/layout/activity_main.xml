@@ -59,16 +59,17 @@
         app:layout_constraintTop_toBottomOf="@id/tv_day_month_year">
 
         <ImageButton
+            android:id="@+id/imageButtonCategories1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:onClick="go_to_the_categories"
-            android:src="@drawable/frame_579"
             app:circularflow_radiusInDP="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/tv_imb_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -91,6 +92,7 @@
         app:layout_constraintTop_toBottomOf="@id/frameLayout_1">
 
         <ImageButton
+            android:id="@+id/imageButton_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:onClick="go_to_the_categories"
@@ -101,6 +103,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/tv_imb_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -122,6 +125,7 @@
         app:layout_constraintTop_toBottomOf="@id/frameLayout_2">
 
         <ImageButton
+            android:id="@+id/imageButton_3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:onClick="go_to_the_categories"
@@ -132,6 +136,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/tv_imb_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -153,6 +158,7 @@
         app:layout_constraintTop_toBottomOf="@id/frameLayout_3">
 
         <ImageButton
+            android:id="@+id/imageButton_4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:onClick="go_to_the_categories"
@@ -163,6 +169,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/tv_imb_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"

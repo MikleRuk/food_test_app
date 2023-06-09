@@ -68,7 +68,7 @@
             app:srcCompat="@drawable/frame_583" />
 
         <ImageButton
-            android:id="@+id/imageButton7"
+            android:id="@+id/imageButton6"
             android:layout_width="109dp"
             android:layout_height="110dp"
             android:layout_marginStart="8dp"
@@ -77,7 +77,7 @@
             app:srcCompat="@drawable/frame_585" />
 
         <ImageButton
-            android:id="@+id/imageButton6"
+            android:id="@+id/imageButton7"
             android:layout_width="109dp"
             android:layout_height="109dp"
             android:layout_marginStart="8dp"
