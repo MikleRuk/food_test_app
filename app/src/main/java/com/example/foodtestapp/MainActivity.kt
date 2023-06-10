@@ -1,19 +1,17 @@
 package com.example.foodtestapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.android.volley.Request.Method.GET
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.foodtestapp.databinding.ActivityMainBinding
-import kotlinx.coroutines.launch
-import retrofit2.await
-import com.squareup.picasso.Picasso
 import com.squareup.picasso.Request
-import kotlinx.serialization.json.Json
-import org.json.JSONObject
+import kotlinx.coroutines.launch
 
 
 class MainActivity : AppCompatActivity() {
@@ -25,10 +23,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        lifecycleScope.launch {
-            val categories = CategoriesApp().configureRetrofit()
+        val categoriesApi = RetrofitHelper.getInstance().create(CategoriesApi::class.java)
 
+        lifecycleScope.launch {
+            val result = categoriesApi.getCategories()
+            if (result != null) {
+                Log.d("ayush: ", result.body().toString())
+            } else {
+                Log.d("ayush1: ", "НИЧЕГО")
+            }
         }
+
+
+
 
     }
 
@@ -37,4 +44,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, categories_activity::class.java)
         startActivity(intent)
     }
+
 }
+
+
+
+
