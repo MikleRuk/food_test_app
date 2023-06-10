@@ -26,22 +26,15 @@ class MainActivity : AppCompatActivity() {
 
 
         lifecycleScope.launch {
-
-            val categories = restCategoriesApi.getDataClassForCategories()
-            
-
-
-            }
+            val categories = CategoriesApp().configureRetrofit()
 
         }
 
+    }
 
 
     fun go_to_the_categories(view: View) {
-
-            val intent = Intent(this, categories_activity::class.java)
-            startActivity(intent)
-        }
-
-
+        val intent = Intent(this, categories_activity::class.java)
+        startActivity(intent)
     }
+}
