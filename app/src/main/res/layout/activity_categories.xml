@@ -60,231 +60,219 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/imageButton5"
+            android:id="@+id/imBtnDish1"
             android:layout_width="109dp"
             android:layout_height="109dp"
             android:background="@color/white"
             android:onClick="go_to_the_food_window_activity"
-            app:srcCompat="@drawable/frame_583" />
+             />
 
         <ImageButton
-            android:id="@+id/imageButton6"
+            android:id="@+id/imBtnDish2"
             android:layout_width="109dp"
             android:layout_height="110dp"
             android:layout_marginStart="8dp"
             android:background="@color/white"
             android:onClick="go_to_the_food_window_activity"
-            app:srcCompat="@drawable/frame_585" />
+             />
 
         <ImageButton
-            android:id="@+id/imageButton7"
+            android:id="@+id/imBtnDish3"
             android:layout_width="109dp"
             android:layout_height="109dp"
             android:layout_marginStart="8dp"
             android:background="@color/white"
             android:onClick="go_to_the_food_window_activity"
-            app:srcCompat="@drawable/frame_584" />
+             />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tvImbDish1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="@string/рис_с_овощами"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tvImbDish2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="5dp"
-            android:text="@string/салат_по_восточному"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/tvImbDish3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:text="@string/рыба_с_овощами_и_рисом"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/imageButton8"
+            android:id="@+id/imBtnDish4"
             android:layout_width="109dp"
             android:layout_height="109dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
             android:onClick="go_to_the_food_window_activity"
-            app:srcCompat="@drawable/frame_586" />
+             />
 
         <ImageButton
-            android:id="@+id/imageButton9"
+            android:id="@+id/imBtnDish5"
             android:layout_width="109dp"
             android:layout_height="109dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
             android:onClick="go_to_the_food_window_activity"
-            app:srcCompat="@drawable/frame_587" />
+             />
 
         <ImageButton
-            android:id="@+id/imageButton10"
+            android:id="@+id/imBtnDish6"
             android:layout_width="109dp"
             android:layout_height="110dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
             android:onClick="go_to_the_food_window_activity"
-            app:srcCompat="@drawable/frame_588" />
+             />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/tvImbDish4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="@string/тортеллини"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/tvImbDish5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="5dp"
-            android:text="@string/зеленый_салат"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/tvImbDish6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="5dp"
-            android:text="@string/рулеты_из_ветчины"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/imageButton11"
+            android:id="@+id/imBtnDish7"
             android:layout_width="109dp"
             android:layout_height="109dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
             android:onClick="go_to_the_food_window_activity"
-            app:srcCompat="@drawable/frame_589" />
+             />
 
         <ImageButton
-            android:id="@+id/imageButton13"
+            android:id="@+id/imBtnDish8"
             android:layout_width="109dp"
             android:layout_height="110dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
             android:onClick="go_to_the_food_window_activity"
-            app:srcCompat="@drawable/frame_591" />
+             />
 
         <ImageButton
-            android:id="@+id/imageButton12"
+            android:id="@+id/imBtnDish9"
             android:layout_width="109dp"
             android:layout_height="109dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
             android:onClick="go_to_the_food_window_activity"
-            app:srcCompat="@drawable/frame_590" />
+             />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/tvImbDish7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="@string/рис_с_овощами"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/tvImbDish8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="5dp"
-            android:text="@string/салат_по_восточному"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/tvImbDish9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:layout_marginTop="5dp"
-            android:text="@string/рыба_с_овощами_и_рисом"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/imageButton14"
+            android:id="@+id/imBtnDish10"
             android:layout_width="109dp"
             android:layout_height="109dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
             android:onClick="go_to_the_food_window_activity"
-            app:srcCompat="@drawable/frame_592" />
+             />
 
         <ImageButton
-            android:id="@+id/imageButton15"
+            android:id="@+id/imBtnDish11"
             android:layout_width="109dp"
             android:layout_height="109dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
             android:onClick="go_to_the_food_window_activity"
-            app:srcCompat="@drawable/frame_593" />
+             />
 
         <ImageButton
-            android:id="@+id/imageButton16"
+            android:id="@+id/imBtnDish12"
             android:layout_width="109dp"
             android:layout_height="110dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
             android:onClick="go_to_the_food_window_activity"
-            app:srcCompat="@drawable/frame_594" />
+             />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/tvImbDish10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="@string/тортеллини"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/tvImbDish11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="5dp"
-            android:text="@string/зеленый_салат"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/tvImbDish12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="5dp"
-            android:text="@string/рулеты_из_ветчины"
             android:textSize="14sp"
             android:textStyle="bold" />
     </GridLayout>

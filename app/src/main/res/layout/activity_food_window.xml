@@ -25,7 +25,7 @@
         app:layout_constraintVertical_bias="0.453">
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imVFW"
             android:layout_width="311dp"
             android:layout_height="232dp"
             android:layout_marginStart="16dp"
@@ -36,7 +36,7 @@
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tVFWName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="256dp"
@@ -44,20 +44,18 @@
             android:text="TextView" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tVFWPriceWeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="281dp"
             android:layout_marginStart="16dp"
             android:text="TextView" />
-
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/tVFWDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="304dp"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:text="TextView" />
 
         <Button

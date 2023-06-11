@@ -1,4 +1,4 @@
-package com.example.foodtestapp
+package Categories
 
 import retrofit2.Response
 import retrofit2.http.GET

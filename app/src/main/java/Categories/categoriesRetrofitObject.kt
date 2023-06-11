@@ -1,4 +1,4 @@
-package com.example.foodtestapp
+package Categories
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
