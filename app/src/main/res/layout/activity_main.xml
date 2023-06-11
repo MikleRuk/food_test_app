@@ -74,6 +74,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:text="AGHAEGUHAUGAGE" />
 
     </FrameLayout>
@@ -92,11 +94,10 @@
         app:layout_constraintTop_toBottomOf="@id/frameLayout_1">
 
         <ImageButton
-            android:id="@+id/imageButton_2"
+            android:id="@+id/imageButtonCategories2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:onClick="go_to_the_categories"
-            android:src="@drawable/frame_580"
             app:circularflow_radiusInDP="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -108,6 +109,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:text="AFIHAFHOAAFAF" />
     </FrameLayout>
 
@@ -125,11 +128,10 @@
         app:layout_constraintTop_toBottomOf="@id/frameLayout_2">
 
         <ImageButton
-            android:id="@+id/imageButton_3"
+            android:id="@+id/imageButtonCategories3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:onClick="go_to_the_categories"
-            android:src="@drawable/frame_581"
             app:circularflow_radiusInDP="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -141,6 +143,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:text="AWFAWFAFAFAWFAFAWF" />
     </FrameLayout>
 
@@ -158,11 +162,10 @@
         app:layout_constraintTop_toBottomOf="@id/frameLayout_3">
 
         <ImageButton
-            android:id="@+id/imageButton_4"
+            android:id="@+id/imageButtonCategories4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:onClick="go_to_the_categories"
-            android:src="@drawable/frame_582"
             app:circularflow_radiusInDP="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -174,6 +177,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:text="AWFAWFAFAFAWFAFAWF" />
 
     </FrameLayout>

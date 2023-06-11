@@ -11,6 +11,7 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.example.foodtestapp.databinding.ActivityMainBinding
 import com.google.gson.Gson
+import com.squareup.picasso.Picasso
 import com.squareup.picasso.Request
 import kotlinx.coroutines.launch
 import kotlinx.serialization.decodeFromString
@@ -31,9 +32,6 @@ class MainActivity : AppCompatActivity() {
         val categoriesApi = RetrofitHelper.getInstance().create(CategoriesApi::class.java)
 
         lifecycleScope.launch {
-//            val result = categoriesApi.getCategories()
-//            if (result != null)
-//                Log.d("ayush: ", result.body().toString())
 
             val response: Response<DataClassCategories> = categoriesApi.getCategories()
             val dataClassCategories: DataClassCategories? = response.body()
@@ -45,30 +43,32 @@ class MainActivity : AppCompatActivity() {
                 when (i) {
                     0 -> {
                         val category = deserializedCategoriesList[i]
-                        val id: Int? = category.id
                         val name: String? = category.name
                         val image_url: String? = category.imageUrl
                         binding.tvImb1.text = name
+                        Picasso.get().load(image_url).into(binding.imageButtonCategories1)
                     }
                     1 -> {
                         val category = deserializedCategoriesList[i]
-                        val id: Int? = category.id
                         val name: String? = category.name
                         val image_url: String? = category.imageUrl
                         binding.tvImb2.text = name
+                        Picasso.get().load(image_url).into(binding.imageButtonCategories2)
                     }
                     2 -> {
                         val category = deserializedCategoriesList[i]
-                        val id: Int? = category.id
                         val name: String? = category.name
                         val image_url: String? = category.imageUrl
                         binding.tvImb3.text = name
+                        Picasso.get().load(image_url).into(binding.imageButtonCategories3)
+
                     }
                     3 -> {val category = deserializedCategoriesList[i]
-                        val id: Int? = category.id
                         val name: String? = category.name
                         val image_url: String? = category.imageUrl
-                        binding.tvImb4.text = name}
+                        binding.tvImb4.text = name
+                        Picasso.get().load(image_url).into(binding.imageButtonCategories4)
+                    }
                 }
             }
         }
