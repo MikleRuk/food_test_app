@@ -31,161 +31,29 @@ class food_window_activity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
-        val categoriesApi = RetrofitHelper.getInstance().create(DishesApi::class.java)
+        val windowId = intent.getIntExtra("windowId", 1)
+        val id = intent.getIntExtra("id", 1)
+        val name = intent.getStringExtra("name")
+        val image_url = intent.getStringExtra("imageUrl")
+        val weight = intent.getIntExtra("weight", 0)
+        val price = intent.getIntExtra("price", 0)
+        val description = intent.getStringExtra("description")
 
-        lifecycleScope.launch {
-            val response: Response<DataClassDishes> = categoriesApi.getDishes()
-            val dataClassDishes: DataClassDishes? = response.body()
-            val dishesList = dataClassDishes?.dishes
-            val dishesJson = Json.encodeToString(dishesList)
-            val json = Json { ignoreUnknownKeys = true }
-            val deserializedDishesList =
-                json.decodeFromString<List<Dishes>>(dishesJson)
-
-            for (i in 0 until deserializedDishesList.size) {
-                when (i) {
-                    0 -> {
-                        val category = deserializedDishesList[i]
-                        val name: String? = category.name
-                        val image_url: String? = category.imageUrl
-                        val weight : Int? = category.weight
-                        val price : Int? = category.price
-                        val description : String? = category.description
-                        binding.tVFWName.text = name
-                        binding.tVFWPriceWeight.text = "$price" +  "Р " +"$weight" + "г"
-                        binding.tVFWDescription.text = description
-                        Picasso.get().load(image_url).into(binding.imVFW)
-                    }
-                    1 -> {
-                        val category = deserializedDishesList[i]
-                        val name: String? = category.name
-                        val image_url: String? = category.imageUrl
-                        val weight : Int? = category.weight
-                        val price : Int? = category.price
-                        binding.tVFWName.text = name
-                        binding.tVFWPriceWeight.text = "$price" +  "Р " +"$weight" + "г"
-                        Picasso.get().load(image_url).into(binding.imVFW)
-                    }
-                    2 -> {
-                        val category = deserializedDishesList[i]
-                        val name: String? = category.name
-                        val image_url: String? = category.imageUrl
-                        val weight : Int? = category.weight
-                        val price : Int? = category.price
-                        binding.tVFWName.text = name
-                        binding.tVFWPriceWeight.text = "$price" +  "Р " +"$weight" + "г"
-                        Picasso.get().load(image_url).into(binding.imVFW)
-                    }
-                    3 -> {
-                        val category = deserializedDishesList[i]
-                        val name: String? = category.name
-                        val image_url: String? = category.imageUrl
-                        val weight : Int? = category.weight
-                        val price : Int? = category.price
-                        binding.tVFWName.text = name
-                        binding.tVFWPriceWeight.text ="$price" +  "Р " +"$weight" + "г"
-                        Picasso.get().load(image_url).into(binding.imVFW)
-                    }
-                    4 -> {
-                        val category = deserializedDishesList[i]
-                        val name: String? = category.name
-                        val image_url: String? = category.imageUrl
-                        val weight : Int? = category.weight
-                        val price : Int? = category.price
-                        binding.tVFWName.text = name
-                        binding.tVFWPriceWeight.text ="$price" +  "Р " +"$weight" + "г"
-                        Picasso.get().load(image_url).into(binding.imVFW)
-                    }
-                    5 -> {
-                        val category = deserializedDishesList[i]
-                        val name: String? = category.name
-                        val image_url: String? = category.imageUrl
-                        val weight : Int? = category.weight
-                        val price : Int? = category.price
-                        binding.tVFWName.text = name
-                        binding.tVFWPriceWeight.text ="$price" +  "Р " +"$weight" + "г"
-                        Picasso.get().load(image_url).into(binding.imVFW)
-                    }
-                    6 -> {
-                        val category = deserializedDishesList[i]
-                        val name: String? = category.name
-                        val image_url: String? = category.imageUrl
-                        val weight : Int? = category.weight
-                        val price : Int? = category.price
-                        binding.tVFWName.text = name
-                        binding.tVFWPriceWeight.text = "$price" +  "Р " +"$weight" + "г"
-                        Picasso.get().load(image_url).into(binding.imVFW)
-                    }
-                    7 -> {
-                        val category = deserializedDishesList[i]
-                        val name: String? = category.name
-                        val image_url: String? = category.imageUrl
-                        val weight : Int? = category.weight
-                        val price : Int? = category.price
-                        binding.tVFWName.text = name
-                        binding.tVFWPriceWeight.text = "$price" +  "Р " +"$weight" + "г"
-                        Picasso.get().load(image_url).into(binding.imVFW)
-                    }
-                    8 -> {
-                        val category = deserializedDishesList[i]
-                        val name: String? = category.name
-                        val image_url: String? = category.imageUrl
-                        val weight : Int? = category.weight
-                        val price : Int? = category.price
-                        binding.tVFWName.text = name
-                        binding.tVFWPriceWeight.text = "$price" +  "Р " +"$weight" + "г"
-                        Picasso.get().load(image_url).into(binding.imVFW)
-                    }
-                    9 -> {
-                        val category = deserializedDishesList[i]
-                        val name: String? = category.name
-                        val image_url: String? = category.imageUrl
-                        val weight : Int? = category.weight
-                        val price : Int? = category.price
-                        binding.tVFWName.text = name
-                        binding.tVFWPriceWeight.text = "$price" +  "Р " +"$weight" + "г"
-                        Picasso.get().load(image_url).into(binding.imVFW)
-                    }
-                    10 -> {
-                        val category = deserializedDishesList[i]
-                        val name: String? = category.name
-                        val image_url: String? = category.imageUrl
-                        val weight : Int? = category.weight
-                        val price : Int? = category.price
-                        binding.tVFWName.text = name
-                        binding.tVFWPriceWeight.text = "$price" +  "Р " +"$weight" + "г"
-                        Picasso.get().load(image_url).into(binding.imVFW)
-                    }
-                    11 -> {
-                        val category = deserializedDishesList[i]
-                        val name: String? = category.name
-                        val image_url: String? = category.imageUrl
-                        val weight : Int? = category.weight
-                        val price : Int? = category.price
-                        binding.tVFWName.text = name
-                        binding.tVFWPriceWeight.text = "$price" +  "Р " +"$weight" + "г"
-                        Picasso.get().load(image_url).into(binding.imVFW)
-                    }
-
-
-                }
-
-
-            }
-
-        }
-
-
-
-
-
-
+        binding.tVFWName.text = name
+        binding.tVFWPriceWeight.text = "$price" + "Р" + " $weight" + "г"
+        binding.tVFWDescription.text = description
+        Picasso.get().load(image_url).into(binding.imVFW)
 
 
     }
+
 
     fun close_food_window_activity(view: View) {
         val intent = Intent(this, categories_activity::class.java)
         startActivity(intent)
     }
+
+
 }
+
+
