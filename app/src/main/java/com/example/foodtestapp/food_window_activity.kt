@@ -1,24 +1,14 @@
 package com.example.foodtestapp
 
-import Categories.CategoriesListItem
-import Categories.RetrofitHelper
+
 import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.Window
-import androidx.lifecycle.lifecycleScope
 import com.example.foodtestapp.databinding.ActivityFoodWindowBinding
 import com.squareup.picasso.Picasso
-import dishes.DataClassDishes
-import dishes.Dishes
-import dishes.DishesApi
-import kotlinx.coroutines.launch
-import kotlinx.serialization.encodeToString
-import kotlinx.serialization.json.Json
-import retrofit2.Response
-
 class food_window_activity : AppCompatActivity() {
 
     lateinit var binding: ActivityFoodWindowBinding
@@ -52,6 +42,7 @@ class food_window_activity : AppCompatActivity() {
         val intent = Intent(this, categories_activity::class.java)
         startActivity(intent)
     }
+
 
 
 }

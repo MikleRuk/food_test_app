@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/layoutImage"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+     />
+
+    <TextView
+        android:id="@+id/tvLayoutName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dawdawd
+"
+        android:textStyle="bold"
+     />
+
+    <TextView
+        android:id="@+id/tvLayoutPriceWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-62dp"
+        android:layout_marginTop="16dp"
+        android:text="fadfafawf
+"
+        />
+
+    <ImageButton
+        android:id="@+id/decreaseButton"
+        android:layout_width="45dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="6dp"
+        android:background="#EFEEEC"
+        android:layout_marginStart="140dp"
+        tools:ignore="TouchTargetSizeCheck"
+        tools:src="@drawable/frame_610" />
+
+    <TextView
+        android:id="@+id/tvQuality"
+        android:layout_width="9dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:layout_marginTop="6dp"
+        android:text="2" />
+
+    <ImageButton
+        android:id="@+id/increaseButton"
+        android:layout_width="45dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="6dp"
+        android:background="#EFEEEC"
+        tools:ignore="TouchTargetSizeCheck"
+        tools:src="@drawable/frame_609" />
+
+
+
+
+
+</LinearLayout>

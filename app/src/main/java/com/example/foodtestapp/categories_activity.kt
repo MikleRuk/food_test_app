@@ -1,18 +1,14 @@
 package com.example.foodtestapp
 
-import Categories.CategoriesApi
-import Categories.CategoriesListItem
-import Categories.DataClassCategories
+
 import Categories.RetrofitHelper
-import android.content.ClipDescription
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.view.WindowId
 import androidx.lifecycle.lifecycleScope
 import com.example.foodtestapp.databinding.ActivityCategoriesBinding
-import com.example.foodtestapp.databinding.ActivityMainBinding
 import com.squareup.picasso.Picasso
 import dishes.DataClassDishes
 import dishes.Dishes
@@ -460,7 +456,17 @@ class categories_activity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun goToTheBusket(view: View) {
+        val intent = Intent(this, basketActivity::class.java)
+        startActivity(intent)
     }
+
+    fun goHome(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
+
+}
 
 
 

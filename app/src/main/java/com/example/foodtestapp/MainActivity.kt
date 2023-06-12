@@ -77,6 +77,11 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun goToTheBusket(view: View) {
+        val intent = Intent(this, basketActivity::class.java)
+        startActivity(intent)
+    }
+
 }
 
 
