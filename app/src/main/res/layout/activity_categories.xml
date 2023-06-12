@@ -64,7 +64,7 @@
             android:layout_width="109dp"
             android:layout_height="109dp"
             android:background="@color/white"
-            android:onClick="go_to_the_food_window_activity"
+
              />
 
         <ImageButton
@@ -73,7 +73,7 @@
             android:layout_height="110dp"
             android:layout_marginStart="8dp"
             android:background="@color/white"
-            android:onClick="go_to_the_food_window_activity"
+
              />
 
         <ImageButton
@@ -82,7 +82,7 @@
             android:layout_height="109dp"
             android:layout_marginStart="8dp"
             android:background="@color/white"
-            android:onClick="go_to_the_food_window_activity"
+
              />
 
         <TextView
@@ -117,7 +117,7 @@
             android:layout_height="109dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
-            android:onClick="go_to_the_food_window_activity"
+
              />
 
         <ImageButton
@@ -127,7 +127,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
-            android:onClick="go_to_the_food_window_activity"
+
              />
 
         <ImageButton
@@ -137,7 +137,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
-            android:onClick="go_to_the_food_window_activity"
+
              />
 
         <TextView
@@ -172,7 +172,7 @@
             android:layout_height="109dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
-            android:onClick="go_to_the_food_window_activity"
+
              />
 
         <ImageButton
@@ -182,7 +182,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
-            android:onClick="go_to_the_food_window_activity"
+
              />
 
         <ImageButton
@@ -192,7 +192,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
-            android:onClick="go_to_the_food_window_activity"
+
              />
 
         <TextView
@@ -227,7 +227,7 @@
             android:layout_height="109dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
-            android:onClick="go_to_the_food_window_activity"
+
              />
 
         <ImageButton
@@ -237,7 +237,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
-            android:onClick="go_to_the_food_window_activity"
+
              />
 
         <ImageButton
@@ -247,7 +247,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="29dp"
             android:background="@color/white"
-            android:onClick="go_to_the_food_window_activity"
+
              />
 
         <TextView

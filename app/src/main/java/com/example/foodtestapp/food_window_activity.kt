@@ -34,7 +34,7 @@ class food_window_activity : AppCompatActivity() {
         val windowId = intent.getIntExtra("windowId", 1)
         val id = intent.getIntExtra("id", 1)
         val name = intent.getStringExtra("name")
-        val image_url = intent.getStringExtra("imageUrl")
+        val imageUrl = intent.getStringExtra("imageUrl")
         val weight = intent.getIntExtra("weight", 0)
         val price = intent.getIntExtra("price", 0)
         val description = intent.getStringExtra("description")
@@ -42,7 +42,7 @@ class food_window_activity : AppCompatActivity() {
         binding.tVFWName.text = name
         binding.tVFWPriceWeight.text = "$price" + "Р" + " $weight" + "г"
         binding.tVFWDescription.text = description
-        Picasso.get().load(image_url).into(binding.imVFW)
+        Picasso.get().load(imageUrl).into(binding.imVFW)
 
 
     }

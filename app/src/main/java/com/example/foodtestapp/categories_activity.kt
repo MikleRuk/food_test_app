@@ -192,12 +192,12 @@ class categories_activity : AppCompatActivity() {
                 val category = deserializedDishesList[0]
                 val id: Int? = category.id
                 val name: String? = category.name
-                val image_url: String? = category.imageUrl
+                val imageUrl: String? = category.imageUrl
                 val weight: Int? = category.weight
                 val price: Int? = category.price
                 val description: String? = category.description
 
-                openWindow(1, id, name, image_url, weight, price, description)
+                openWindow(1, id, name,imageUrl, weight, price, description)
             }
         }
         binding.imBtnDish2.setOnClickListener {
@@ -213,12 +213,12 @@ class categories_activity : AppCompatActivity() {
                 val category = deserializedDishesList[1]
                 val id: Int? = category.id
                 val name: String? = category.name
-                val image_url: String? = category.imageUrl
+                val imageUrl: String? = category.imageUrl
                 val weight: Int? = category.weight
                 val price: Int? = category.price
                 val description: String? = category.description
 
-                openWindow(2, id, name, image_url, weight, price, description)
+                openWindow(2, id, name, imageUrl, weight, price, description)
             }
         }
         binding.imBtnDish3.setOnClickListener {
@@ -234,12 +234,12 @@ class categories_activity : AppCompatActivity() {
                 val category = deserializedDishesList[2]
                 val id: Int? = category.id
                 val name: String? = category.name
-                val image_url: String? = category.imageUrl
+                val imageUrl: String? = category.imageUrl
                 val weight: Int? = category.weight
                 val price: Int? = category.price
                 val description: String? = category.description
 
-                openWindow(3, id, name, image_url, weight, price, description)
+                openWindow(3, id, name,imageUrl , weight, price, description)
             }
         }
         binding.imBtnDish4.setOnClickListener {
@@ -255,12 +255,12 @@ class categories_activity : AppCompatActivity() {
                 val category = deserializedDishesList[3]
                 val id: Int? = category.id
                 val name: String? = category.name
-                val image_url: String? = category.imageUrl
+                val imageUrl: String? = category.imageUrl
                 val weight: Int? = category.weight
                 val price: Int? = category.price
                 val description: String? = category.description
 
-                openWindow(4, id, name, image_url, weight, price, description)
+                openWindow(4, id, name, imageUrl, weight, price, description)
             }
         }
         binding.imBtnDish5.setOnClickListener {
@@ -276,12 +276,12 @@ class categories_activity : AppCompatActivity() {
                 val category = deserializedDishesList[4]
                 val id: Int? = category.id
                 val name: String? = category.name
-                val image_url: String? = category.imageUrl
+                val imageUrl: String? = category.imageUrl
                 val weight: Int? = category.weight
                 val price: Int? = category.price
                 val description: String? = category.description
 
-                openWindow(5, id, name, image_url, weight, price, description)
+                openWindow(5, id, name, imageUrl, weight, price, description)
             }
         }
         binding.imBtnDish6.setOnClickListener {
@@ -297,12 +297,12 @@ class categories_activity : AppCompatActivity() {
                 val category = deserializedDishesList[5]
                 val id: Int? = category.id
                 val name: String? = category.name
-                val image_url: String? = category.imageUrl
+                val imageUrl: String? = category.imageUrl
                 val weight: Int? = category.weight
                 val price: Int? = category.price
                 val description: String? = category.description
 
-                openWindow(6, id, name, image_url, weight, price, description)
+                openWindow(6, id, name, imageUrl, weight, price, description)
             }
         }
         binding.imBtnDish7.setOnClickListener {
@@ -318,12 +318,12 @@ class categories_activity : AppCompatActivity() {
                 val category = deserializedDishesList[6]
                 val id: Int? = category.id
                 val name: String? = category.name
-                val image_url: String? = category.imageUrl
+                val imageUrl: String? = category.imageUrl
                 val weight: Int? = category.weight
                 val price: Int? = category.price
                 val description: String? = category.description
 
-                openWindow(7, id, name, image_url, weight, price, description)
+                openWindow(7, id, name, imageUrl, weight, price, description)
             }
         }
         binding.imBtnDish8.setOnClickListener {
@@ -339,12 +339,12 @@ class categories_activity : AppCompatActivity() {
                 val category = deserializedDishesList[7]
                 val id: Int? = category.id
                 val name: String? = category.name
-                val image_url: String? = category.imageUrl
+                val imageUrl: String? = category.imageUrl
                 val weight: Int? = category.weight
                 val price: Int? = category.price
                 val description: String? = category.description
 
-                openWindow(8, id, name, image_url, weight, price, description)
+                openWindow(8, id, name, imageUrl, weight, price, description)
             }
         }
         binding.imBtnDish9.setOnClickListener {
@@ -360,12 +360,12 @@ class categories_activity : AppCompatActivity() {
                 val category = deserializedDishesList[8]
                 val id: Int? = category.id
                 val name: String? = category.name
-                val image_url: String? = category.imageUrl
+                val imageUrl: String? = category.imageUrl
                 val weight: Int? = category.weight
                 val price: Int? = category.price
                 val description: String? = category.description
 
-                openWindow(9, id, name, image_url, weight, price, description)
+                openWindow(9, id, name, imageUrl, weight, price, description)
             }
         }
         binding.imBtnDish10.setOnClickListener {
@@ -381,12 +381,12 @@ class categories_activity : AppCompatActivity() {
                 val category = deserializedDishesList[9]
                 val id: Int? = category.id
                 val name: String? = category.name
-                val image_url: String? = category.imageUrl
+                val imageUrl: String? = category.imageUrl
                 val weight: Int? = category.weight
                 val price: Int? = category.price
                 val description: String? = category.description
 
-                openWindow(10, id, name, image_url, weight, price, description)
+                openWindow(10, id, name, imageUrl, weight, price, description)
             }
         }
         binding.imBtnDish11.setOnClickListener {
@@ -402,12 +402,12 @@ class categories_activity : AppCompatActivity() {
                 val category = deserializedDishesList[10]
                 val id: Int? = category.id
                 val name: String? = category.name
-                val image_url: String? = category.imageUrl
+                val imageUrl: String? = category.imageUrl
                 val weight: Int? = category.weight
                 val price: Int? = category.price
                 val description: String? = category.description
 
-                openWindow(11, id, name, image_url, weight, price, description)
+                openWindow(11, id, name, imageUrl, weight, price, description)
             }
         }
         binding.imBtnDish12.setOnClickListener {
@@ -423,12 +423,12 @@ class categories_activity : AppCompatActivity() {
                 val category = deserializedDishesList[11]
                 val id: Int? = category.id
                 val name: String? = category.name
-                val image_url: String? = category.imageUrl
+                val imageUrl: String? = category.imageUrl
                 val weight: Int? = category.weight
                 val price: Int? = category.price
                 val description: String? = category.description
 
-                openWindow(12, id, name, image_url, weight, price, description)
+                openWindow(12, id, name, imageUrl, weight, price, description)
             }
         }
     }
@@ -444,7 +444,7 @@ class categories_activity : AppCompatActivity() {
         windowId: Int,
         id: Int?,
         name: String?,
-        image_url: String?,
+        imageUrl: String?,
         weight: Int?,
         price: Int?,
         description: String?
@@ -453,7 +453,7 @@ class categories_activity : AppCompatActivity() {
         intent.putExtra("windowId", windowId)
         intent.putExtra("id", id)
         intent.putExtra("name", name)
-        intent.putExtra("image_url", image_url)
+        intent.putExtra("imageUrl", imageUrl)
         intent.putExtra("weight", weight)
         intent.putExtra("price", price)
         intent.putExtra("description", description)
@@ -463,9 +463,5 @@ class categories_activity : AppCompatActivity() {
     }
 
 
-//    fun go_to_the_food_window_activity(view: View) {
-//        val intent = Intent(this, food_window_activity::class.java)
-//        startActivity(intent)
-//    }
 
 
