@@ -32,6 +32,12 @@ class categories_activity : AppCompatActivity() {
         val categoriesApi = RetrofitHelper.getInstance().create(DishesApi::class.java)
 
         lifecycleScope.launch {
+
+            val name = intent.getStringExtra("name")
+            binding.CategoryTitle.text = name
+
+
+
             val response: Response<DataClassDishes> = categoriesApi.getDishes()
             val dataClassDishes: DataClassDishes? = response.body()
             val dishesList = dataClassDishes?.dishes

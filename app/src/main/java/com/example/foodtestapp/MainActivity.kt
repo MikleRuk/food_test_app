@@ -75,6 +75,7 @@ class MainActivity : AppCompatActivity() {
                         val image_url: String? = category.imageUrl
                         binding.tvImb1.text = name
                         Picasso.get().load(image_url).into(binding.imageButtonCategories1)
+
                     }
                     1 -> {
                         val category = deserializedCategoriesList[i]
@@ -82,6 +83,7 @@ class MainActivity : AppCompatActivity() {
                         val image_url: String? = category.imageUrl
                         binding.tvImb2.text = name
                         Picasso.get().load(image_url).into(binding.imageButtonCategories2)
+
                     }
                     2 -> {
                         val category = deserializedCategoriesList[i]
@@ -89,6 +91,7 @@ class MainActivity : AppCompatActivity() {
                         val image_url: String? = category.imageUrl
                         binding.tvImb3.text = name
                         Picasso.get().load(image_url).into(binding.imageButtonCategories3)
+
 
                     }
                     3 -> {
@@ -101,11 +104,71 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-    }
+
+        binding.imageButtonCategories1.setOnClickListener {
+            lifecycleScope.launch {
+                val response: Response<DataClassCategories> = categoriesApi.getCategories()
+                val dataClassCategories: DataClassCategories? = response.body()
+                val categoriesList = dataClassCategories?.сategories
+                val categoriesJson = Json.encodeToString(categoriesList)
+                val deserializedCategoriesList =
+                    Json.decodeFromString<List<CategoriesListItem>>(categoriesJson)
+                val category = deserializedCategoriesList[0]
+                val name: String? = category.name
+                val image_url: String? = category.imageUrl
+
+                go_to_the_categories("$name")
+            }}
+
+            binding.imageButtonCategories2.setOnClickListener {
+                lifecycleScope.launch {
+                    val response: Response<DataClassCategories> = categoriesApi.getCategories()
+                    val dataClassCategories: DataClassCategories? = response.body()
+                    val categoriesList = dataClassCategories?.сategories
+                    val categoriesJson = Json.encodeToString(categoriesList)
+                    val deserializedCategoriesList =
+                        Json.decodeFromString<List<CategoriesListItem>>(categoriesJson)
+                    val category = deserializedCategoriesList[1]
+                    val name: String? = category.name
+                    val image_url: String? = category.imageUrl
+                    go_to_the_categories("$name")
+                }
+            }
+            binding.imageButtonCategories3.setOnClickListener {
+                lifecycleScope.launch {
+                    val response: Response<DataClassCategories> = categoriesApi.getCategories()
+                    val dataClassCategories: DataClassCategories? = response.body()
+                    val categoriesList = dataClassCategories?.сategories
+                    val categoriesJson = Json.encodeToString(categoriesList)
+                    val deserializedCategoriesList =
+                        Json.decodeFromString<List<CategoriesListItem>>(categoriesJson)
+                    val category = deserializedCategoriesList[2]
+                    val name: String? = category.name
+                    val image_url: String? = category.imageUrl
+                    go_to_the_categories("$name")
+                }
+            }
+            binding.imageButtonCategories4.setOnClickListener {
+                lifecycleScope.launch {
+                    val response: Response<DataClassCategories> = categoriesApi.getCategories()
+                    val dataClassCategories: DataClassCategories? = response.body()
+                    val categoriesList = dataClassCategories?.сategories
+                    val categoriesJson = Json.encodeToString(categoriesList)
+                    val deserializedCategoriesList =
+                        Json.decodeFromString<List<CategoriesListItem>>(categoriesJson)
+                    val category = deserializedCategoriesList[3]
+                    val name: String? = category.name
+                    val image_url: String? = category.imageUrl
+                    go_to_the_categories("$name")
+                }
+            }
+        }
 
 
-    fun go_to_the_categories(view: View) {
+
+    fun go_to_the_categories(name: String) {
         val intent = Intent(this, categories_activity::class.java)
+        intent.putExtra("name", name)
         startActivity(intent)
     }
 
@@ -113,6 +176,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, basketActivity::class.java)
         startActivity(intent)
     }
+
 
 }
 
