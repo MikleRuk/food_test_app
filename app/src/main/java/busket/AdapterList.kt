@@ -24,7 +24,7 @@ class ListAdapter (private val items : MutableList<ListItem>) : RecyclerView.Ada
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.activity_basket, parent, false)
+            .inflate(R.layout.layout, parent, false)
         return ViewHolder(itemView)
     }
 
@@ -34,7 +34,7 @@ class ListAdapter (private val items : MutableList<ListItem>) : RecyclerView.Ada
         val listItem = items[position]
         val product = listItem.product
 
-        holder.tvLayoutName.text = product.name
+        holder.tvLayoutName.text = product?.name
         holder.tvQuality.text = listItem.quantity.toString()
 
         holder.increaseButton.setOnClickListener {

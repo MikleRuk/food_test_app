@@ -4,26 +4,65 @@ import Categories.CategoriesApi
 import Categories.CategoriesListItem
 import Categories.DataClassCategories
 import Categories.RetrofitHelper
+import DayMonth.DateUtils
+import android.Manifest.permission.ACCESS_FINE_LOCATION
+import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.location.Location
+import android.location.LocationListener
+import android.location.LocationManager
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import com.example.foodtestapp.databinding.ActivityMainBinding
 import com.squareup.picasso.Picasso
 import kotlinx.coroutines.launch
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
+import location.GeoLocationManager
 import retrofit2.Response
 
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //день месяц
+
+        val dateAndMonth = DateUtils.getCurrentDateAndMonth()
+
+        binding.tvDayMonthYear.text = dateAndMonth
+
+
+
+
+        //геоданные
+
+        val geoLocationManager = GeoLocationManager(this)
+        geoLocationManager.requestCity(object : GeoLocationManager.OnCityReceivedListener {
+            override fun onCityReceived(city: String) {
+                // Выводим город на экран, но не выводим
+                binding.tvSityLocationMain.text = city
+            }
+
+            override fun onCityRequestFailed() {
+                //тут должен быть Toast, но его нет
+            }
+        })
+
+
+
+
+
 
 
         val categoriesApi = RetrofitHelper.getInstance().create(CategoriesApi::class.java)

@@ -7,20 +7,37 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import busket.ListAdapter
 import busket.ListItem
+import busket.Product
 import com.example.foodtestapp.databinding.ActivityBasketBinding
 
-lateinit var binding: ActivityBasketBinding
 
 class basketActivity : AppCompatActivity() {
+
+    lateinit var binding: ActivityBasketBinding
+
+    private lateinit var productList: ArrayList<Product>
+    private lateinit var listAdapter: ListAdapter
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityBasketBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val itemList: MutableList<ListItem> = mutableListOf()
-        val adapter = ListAdapter(itemList)
-        binding.RecyclerVew.layoutManager = LinearLayoutManager(this)
-        binding.RecyclerVew.adapter = adapter
+        val product = intent.getParcelableExtra<Product>("product")
+        product?.let {
+            productList.add(it)
+        }
+
+        val listItem: MutableList<ListItem> = ArrayList()
+        productList = ArrayList()
+        productList.forEach {
+            listItem.add(ListItem(it, 1))
+        }
+        listAdapter = ListAdapter(listItem)
+        binding.RecyclerView.layoutManager = LinearLayoutManager(this)
+        binding.RecyclerView.adapter = listAdapter
+
 
     }
 

@@ -13,7 +13,9 @@
         android:layout_marginTop="31dp"
         android:layout_marginEnd="35dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/frame_578"
+        tools:srcCompat="@drawable/frame_578" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -21,12 +23,14 @@
         android:layout_height="18dp"
         android:layout_marginTop="32dp"
         android:src="@drawable/stroke_3"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/tvSityLocatoinBasket"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvSityLocatoinBasket"
+        android:textSize="18dp"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
@@ -42,7 +46,7 @@
         android:layout_marginStart="44dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvSityLocatoinBasket" />
 
 
     <LinearLayout
@@ -99,7 +103,7 @@
 
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/RecyclerVew"
+        android:id="@+id/RecyclerView"
         android:layout_width="354dp"
         android:layout_height="484dp"
         android:layout_marginStart="16dp"

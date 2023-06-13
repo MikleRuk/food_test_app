@@ -325,48 +325,51 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="691dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="35dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/frame_578"
+        tools:srcCompat="@drawable/frame_578" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="15dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/stroke_3"
+        app:layout_constraintEnd_toStartOf="@+id/tvGeolocatoinCategorAct"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tvGeolocatoinCategorAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageButton
-            android:id="@+id/imageButton17"
-            android:layout_width="6dp"
-            android:layout_height="12dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="68dp"
-            android:onClick="go_back_to_the_main_activity"
-            app:srcCompat="@drawable/vector_3" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="119dp"
-            android:layout_marginTop="63dp"
-            android:layout_marginEnd="60dp"
-            android:text="adawdawdawqd">
-
-        </TextView>
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:layout_marginTop="51dp"
-            android:layout_marginEnd="35dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-        </ImageView>
+    <TextView
+        android:id="@+id/tv_day_month_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="TextView"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGeolocatoinCategorAct" />
 
 
-    </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,7 @@
     tools:context=".food_window_activity">
 
     <FrameLayout
+        android:id="@+id/FrameLayout"
         android:layout_width="343dp"
         android:layout_height="446dp"
         android:layout_marginStart="16dp"
@@ -59,13 +60,15 @@
             android:layout_marginStart="16dp"
             android:text="TextView" />
 
+
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonAddItemToBusket"
             android:layout_width="311dp"
             android:layout_height="48dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="382dp"
             android:layout_marginEnd="16dp"
+            android:onClick="addItemToBasket"
             android:background="@color/purple_700"
             android:text="Добавить в корзину" />
 
@@ -74,10 +77,11 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="231dp"
-            android:layout_marginTop="24dp"
             android:layout_marginLeft="72dp"
+            android:layout_marginTop="24dp"
             android:background="@color/white"
-            app:srcCompat="@drawable/frame_601" />
+            app:srcCompat="@drawable/frame_601"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/imageButton19"
@@ -88,7 +92,8 @@
             android:layout_marginTop="24dp"
             android:background="@color/white"
             android:onClick="close_food_window_activity"
-            app:srcCompat="@drawable/frame_602" />
+            app:srcCompat="@drawable/frame_602"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     </FrameLayout>
 
