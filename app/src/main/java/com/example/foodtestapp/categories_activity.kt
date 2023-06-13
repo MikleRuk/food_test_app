@@ -29,11 +29,6 @@ class categories_activity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        val dateAndMonth = DateUtils.getCurrentDateAndMonth()
-
-        binding.tvDayMonthYear.text = dateAndMonth
-
-
         val categoriesApi = RetrofitHelper.getInstance().create(DishesApi::class.java)
 
         lifecycleScope.launch {
@@ -182,7 +177,7 @@ class categories_activity : AppCompatActivity() {
         }
 
         binding.imBtnDish1.setOnClickListener {
-        lifecycleScope.launch {
+            lifecycleScope.launch {
                 val response: Response<DataClassDishes> = categoriesApi.getDishes()
                 val dataClassDishes: DataClassDishes? = response.body()
                 val dishesList = dataClassDishes?.dishes
@@ -199,7 +194,7 @@ class categories_activity : AppCompatActivity() {
                 val price: Int? = category.price
                 val description: String? = category.description
 
-                openWindow(1, id, name,imageUrl, weight, price, description)
+                openWindow(1, id, name, imageUrl, weight, price, description)
             }
         }
         binding.imBtnDish2.setOnClickListener {
@@ -241,7 +236,7 @@ class categories_activity : AppCompatActivity() {
                 val price: Int? = category.price
                 val description: String? = category.description
 
-                openWindow(3, id, name,imageUrl , weight, price, description)
+                openWindow(3, id, name, imageUrl, weight, price, description)
             }
         }
         binding.imBtnDish4.setOnClickListener {

@@ -42,9 +42,6 @@ class MainActivity : AppCompatActivity() {
 
         binding.tvDayMonthYear.text = dateAndMonth
 
-
-
-
         //геоданные
 
         val geoLocationManager = GeoLocationManager(this)
@@ -58,11 +55,6 @@ class MainActivity : AppCompatActivity() {
                 //тут должен быть Toast, но его нет
             }
         })
-
-
-
-
-
 
 
         val categoriesApi = RetrofitHelper.getInstance().create(CategoriesApi::class.java)
@@ -99,7 +91,8 @@ class MainActivity : AppCompatActivity() {
                         Picasso.get().load(image_url).into(binding.imageButtonCategories3)
 
                     }
-                    3 -> {val category = deserializedCategoriesList[i]
+                    3 -> {
+                        val category = deserializedCategoriesList[i]
                         val name: String? = category.name
                         val image_url: String? = category.imageUrl
                         binding.tvImb4.text = name

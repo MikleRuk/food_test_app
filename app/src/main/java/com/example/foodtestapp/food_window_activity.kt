@@ -11,6 +11,7 @@ import busket.ListItem
 import busket.Product
 import com.example.foodtestapp.databinding.ActivityFoodWindowBinding
 import com.squareup.picasso.Picasso
+
 class food_window_activity : AppCompatActivity() {
 
     lateinit var binding: ActivityFoodWindowBinding
@@ -40,7 +41,7 @@ class food_window_activity : AppCompatActivity() {
 
 
 
-        binding.buttonAddItemToBusket.setOnClickListener{
+        binding.buttonAddItemToBusket.setOnClickListener {
             val product = Product("$name", price, weight)
             val listItem = ListItem(product, 1)
 
@@ -50,16 +51,13 @@ class food_window_activity : AppCompatActivity() {
         }
 
 
-
     }
-
 
 
     fun close_food_window_activity(view: View) {
         val intent = Intent(this, categories_activity::class.java)
         startActivity(intent)
     }
-
 
 
 }
