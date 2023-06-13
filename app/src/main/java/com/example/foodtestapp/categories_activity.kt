@@ -2,6 +2,7 @@ package com.example.foodtestapp
 
 
 import Categories.RetrofitHelper
+import DayMonth.DateUtils
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -26,6 +27,11 @@ class categories_activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCategoriesBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        val dateAndMonth = DateUtils.getCurrentDateAndMonth()
+
+        binding.tvDayMonthYear.text = dateAndMonth
 
 
         val categoriesApi = RetrofitHelper.getInstance().create(DishesApi::class.java)

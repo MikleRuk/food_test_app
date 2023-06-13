@@ -1,5 +1,6 @@
 package com.example.foodtestapp
 
+import DayMonth.DateUtils
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,6 +24,11 @@ class basketActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityBasketBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        val dateAndMonth = DateUtils.getCurrentDateAndMonth()
+
+        binding.tvDayMonthYear.text = dateAndMonth
 
         val product = intent.getParcelableExtra<Product>("product")
         product?.let {

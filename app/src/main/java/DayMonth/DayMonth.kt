@@ -2,6 +2,7 @@ package DayMonth
 
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
+import java.util.*
 
 class DateUtils {
     companion object {
@@ -14,7 +15,7 @@ class DateUtils {
             val month = currentDate.month
 
             // Форматируем дату и месяц
-            val dateFormatter = DateTimeFormatter.ofPattern("d MMMM")
+            val dateFormatter = DateTimeFormatter.ofPattern("d MMMM", Locale("ru"))
             val dateString = currentDate.format(dateFormatter)
 
             // Возвращаем строку с датой и месяцем
